@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import Posts from './components/Posts.js'
+  const posts = [
+    {
+      title:'Post Title 1',
+      body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse orci metus, convallis sit amet vehicula a, fermentum vel nisi. Nullam dolor risus, auctor at molestie a, pretium vel augue. Fusce sed ligula lacus.'
+    },
+    {
+      title:'Post Title 2',
+      body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse orci metus, convallis sit amet vehicula a, fermentum vel nisi. Nullam dolor risus, auctor at molestie a, pretium vel augue. Fusce sed ligula lacus.' 
+    },
+    {
+      title:'Post Title 3',
+      body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse orci metus, convallis sit amet vehicula a, fermentum vel nisi. Nullam dolor risus, auctor at molestie a, pretium vel augue. Fusce sed ligula lacus.'
+    },
+    {
+      title:'Post Title 4',
+      body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse orci metus, convallis sit amet vehicula a, fermentum vel nisi. Nullam dolor risus, auctor at molestie a, pretium vel augue. Fusce sed ligula lacus.'
+    },
+    {
+      title:'Post Title 5',
+      body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse orci metus, convallis sit amet vehicula a, fermentum vel nisi. Nullam dolor risus, auctor at molestie a, pretium vel augue. Fusce sed ligula lacus.'
+    }
+  ]
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  function App() {
+      return(
+    <section>
+        <h1>Welcome to My Blog</h1>
+        <Posts post={posts}/>
 
-export default App;
+      </section>
+      
+      ) 
+  }
+
+  export default App;
