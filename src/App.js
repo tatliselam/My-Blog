@@ -1,4 +1,4 @@
-import Cost from './components/Cost'
+
 import React from "react";
 import './App.css';
 import {
@@ -86,9 +86,7 @@ class App extends React.Component {
                 <li>
                   <Link to="/create-post">Create Post</Link>
                 </li>
-                <li>
-                  <Link to="/create-Cost">Create Cost</Link>
-                </li>
+               
               </ul>
             </nav>
   
@@ -98,9 +96,7 @@ class App extends React.Component {
               <Route exact path="/">
                 <Posts blogPosts={this.state.posts} />
               </Route>
-              <Route exact path="/create-Cost">
-                <Cost />
-              </Route>
+              
               <Route exact path="/create-post">
                 <CreatePost setFields={this.setFields} storePost={this.storeBlogPost} title={this.state.title} body={this.state.body}/>
               </Route>
